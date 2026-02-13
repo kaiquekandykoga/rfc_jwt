@@ -17,8 +17,8 @@ module RFC
       token
     end
 
-    def self.decode_jwt(payload, key, alg)
-      decoded_token = JWT.decode(payload, key, true, { algorithm: alg })
+    def self.decode_jwt(payload, key, verify_signature = true, alg)
+      decoded_token = JWT.decode(payload, key, verify_signature, { algorithm: alg })
       decoded_token
     end
   end
@@ -28,5 +28,5 @@ puts "→ Unsecured JWT"
 puts "JOSE Header without specifing an algorithm (alg: none)"
 token = RFC::Samples.encode_jwt({ data: "test" }, nil, "none")
 puts "Encoded JWT: #{token}" # eyJhbGciOiJub25lIn0.eyJkYXRhIjoidGVzdCJ9.
-decoded_token = RFC::Samples.decode_jwt(token, nil, "none")
+decoded_token = RFC::Samples.decode_jwt(token, nil, false, "none")
 puts "Decoded JWT: #{decoded_token}" # [{"data"=>"test"}, {"alg"=>"none"}]

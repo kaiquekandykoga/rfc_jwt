@@ -11,6 +11,7 @@ RFC Research Related to JSON Web Tokens (JWT)
 
 * JOSE Header
 * JWT Claims
+  * "exp" (Expiration time) Claim
 * Signature / Authentication Tag
 
 ## Resources
