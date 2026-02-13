@@ -1,0 +1,29 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    base64 (0.3.0)
+    bcrypt (3.1.21)
+    jwt (3.1.2)
+      base64
+    rack (3.2.4)
+    roda (3.100.0)
+      rack
+
+PLATFORMS
+  arm64-darwin-25
+  ruby
+
+DEPENDENCIES
+  bcrypt (~> 3.1)
+  jwt (~> 3.1)
+  roda (~> 3.100)
+
+CHECKSUMS
+  base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
+  bcrypt (3.1.21) sha256=5964613d750a42c7ee5dc61f7b9336fb6caca429ba4ac9f2011609946e4a2dcf
+  jwt (3.1.2) sha256=af6991f19a6bb4060d618d9add7a66f0eeb005ac0bc017cd01f63b42e122d535
+  rack (3.2.4) sha256=5d74b6f75082a643f43c1e76b419c40f0e5527fcfee1e669ac1e6b73c0ccb6f6
+  roda (3.100.0) sha256=35d36f43c68d2bd1974dc77ade8c873558265a191018e1ada88ca662f1fa8e62
+
+BUNDLED WITH
+  4.0.4
